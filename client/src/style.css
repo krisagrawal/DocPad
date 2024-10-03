@@ -1,0 +1,79 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2a9d8f;
+    height: 60px;
+    background-color: #f3f3f3;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    height: 35px;
+}
+
+.container .ql-editor {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1in;
+    margin: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.container .ql-container.ql-snow {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.container .ql-toolbar.ql-snow {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #f3f3f3;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+@page {
+    margin: 1in;
+}
+
+@media print {
+    head {
+        display: none;
+    }
+    body {
+        background: none;
+    }
+
+    .container .ql-editor {
+        width: 6.5in;
+        height: 9in;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        align-self: flex-start;
+    }
+
+    .container .ql-toolbar.ql-snow {
+        display: none;
+    }
+}

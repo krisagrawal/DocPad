@@ -1,0 +1,5 @@
+--mint-cream: #f7fff6ff;
+--celadon: #bcebcbff;
+--light-green: #87d68dff;
+--cambridge-blue: #93b48bff;
+--cool-gray: #8491a3ff;
